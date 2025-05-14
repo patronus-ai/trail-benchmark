@@ -49,7 +49,6 @@ def get_prompt(trace: str):
 │    └── Task Management
 │        ├── Goal Deviation (The system deviated from the task or the subtask)
 │        └── Task Orchestration (includes subtask coordination between agents and progress monitoring)
-└── Domain Specific Errors (Errors that are specific to the domain of the task)
 
 - Based on the taxonomy above, analyze the LLM agent trace below and find errors in it. 
 - You must be exhaustive and find all the errors in the trace. Only include the final subcategories of the taxonomy (i.e. "Resource Not Found" and not "API Issues" or "System Execution Errors").
@@ -137,24 +136,6 @@ The data to analyze is as follows:
 - In the case of "Resource Abuse" error, only mark the last instance of the error in the trace as the location of the error. For all other errors, you must mark the first instance of the error in the trace as the location of the error.
 """
     return prompt.format(trace=trace)
-
-
-    if not string_list:
-        return 0
-
-    try:
-        encoding = tiktoken.encoding_for_model("gpt-4o")
-    except KeyError:
-        encoding = tiktoken.get_encoding("o200k_base")
-
-    token_count = 0
-    for i, text in enumerate(string_list):
-        tokens = len(encoding.encode(text))
-        if token_count + tokens > token_limit:
-            return i
-        token_count += tokens
-
-    return len(string_list)
 
 
 def call_litellm(trace: str, model: str = "openai/gpt-4o"):
