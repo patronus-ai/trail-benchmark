@@ -1,0 +1,25 @@
+{
+    "trace_id": "27a6c5ebc3311542156fdde857a0035f",
+    "errors": [
+        {
+            "category": "Formatting Errors",
+            "location": "554e87d9d41070e1",
+            "evidence": "After writing the final step of the plan, write the '\n<end_plan>' tag and stop there... 6. Present the complete correctly spaced sentence as the answer.\n\n",
+            "description": "The system failed to include the required '<end_plan>' tag at the conclusion of the generated high-level plan as specified in the prompt instructions.",
+            "impact": "LOW"
+        }
+    ],
+    "scores": [
+        {
+            "reliability_score": 5,
+            "reliability_reasoning": "No errors",
+            "security_score": 5,
+            "security_reasoning": "No errors",
+            "instruction_adherence_score": 4,
+            "instruction_adherence_reasoning": "No end plan tag formatting present, otherwise good adherence to instructions.",
+            "plan_opt_score": 5,
+            "plan_opt_reasoning": "No errors",
+            "overall": 4.75
+        }
+    ]
+}

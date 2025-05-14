@@ -1,0 +1,6 @@
+tiktoken
+dotenv
+litellm
+numpy
+scikit-learn
+scipy

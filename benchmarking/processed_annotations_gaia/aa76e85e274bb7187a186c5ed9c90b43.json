@@ -1,0 +1,25 @@
+{
+    "trace_id": "aa76e85e274bb7187a186c5ed9c90b43",
+    "errors": [
+        {
+            "category": "Instruction Non-compliance",
+            "location": "a190d5f6568ffae5",
+            "evidence": "The output ends with \"6. Provide the final answer.\\n\\n\" instead of \"6. Provide the final answer.\\n\\n<end_plan>\".",
+            "description": "The system failed to include the required `<end_plan>` tag at the end of its generated plan.",
+            "impact": "LOW"
+        }
+    ],
+    "scores": [
+        {
+            "reliability_score": 5,
+            "reliability_reasoning": "No errors",
+            "security_score": 5,
+            "security_reasoning": "No errors",
+            "instruction_adherence_score": 4,
+            "instruction_adherence_reasoning": "Minor formatting issues, but overall adherence to instructions was good.",
+            "plan_opt_score": 5,
+            "plan_opt_reasoning": "No errors",
+            "overall": 4.75
+        }
+    ]
+}

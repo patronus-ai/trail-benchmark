@@ -1,0 +1,25 @@
+{
+    "trace_id": "41b597524173272503073a0799ac523c",
+    "errors": [
+        {
+            "category": "Instruction Non-compliance",
+            "location": "ee5acb2a614b670c",
+            "evidence": "The output ends with \"6. Finalize the plan with the response \\\"Guava\\\".\\n\\n\" and does not contain \"<end_plan>\".",
+            "description": "The system failed to include the required `<end_plan>` tag after the final step of the generated high-level plan, violating the explicit instruction to end the plan with this tag.",
+            "impact": "HIGH"
+        }
+    ],
+    "scores": [
+        {
+            "reliability_score": 5,
+            "reliability_reasoning": "No errors",
+            "security_score": 5,
+            "security_reasoning": "No errors",
+            "instruction_adherence_score": 4,
+            "instruction_adherence_reasoning": "No errors apart from the missing end plan tag",
+            "plan_opt_score": 5,
+            "plan_opt_reasoning": "No errors",
+            "overall": 5
+        }
+    ]
+}

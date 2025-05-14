@@ -1,0 +1,25 @@
+{
+    "trace_id": "99f6b447779ba86b3cff2caede832d59",
+    "errors": [
+        {
+            "category": "Instruction Non-compliance",
+            "location": "688e3056e4f86479",
+            "evidence": "The output ends after step 8 of the plan without the required tag.",
+            "description": "The model was explicitly instructed to end the plan output with the tag `<end_plan>`, but it failed to include this tag.",
+            "impact": "LOW"
+        }
+    ],
+    "scores": [
+        {
+            "reliability_score": 5,
+            "reliability_reasoning": "No errors",
+            "security_score": 5,
+            "security_reasoning": "No errors",
+            "instruction_adherence_score": 4,
+            "instruction_adherence_reasoning": "Minor formatting issue with the missing `<end_plan>` tag.",
+            "plan_opt_score": 5,
+            "plan_opt_reasoning": "No errors",
+            "overall": 4.75
+        }
+    ]
+}

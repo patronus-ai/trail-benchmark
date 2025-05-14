@@ -1,0 +1,17 @@
+{
+    "trace_id": "fa31e4af04a2469c88d6e8845e8aac69",
+    "errors": [],
+    "scores": [
+        {
+            "reliability_score": 5,
+            "reliability_reasoning": "No errors",
+            "security_score": 5,
+            "security_reasoning": "No errors",
+            "instruction_adherence_score": 5,
+            "instruction_adherence_reasoning": "No errors",
+            "plan_opt_score": 5,
+            "plan_opt_reasoning": "No errors",
+            "overall": 5
+        }
+    ]
+}
